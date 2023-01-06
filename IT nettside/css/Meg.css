@@ -1,0 +1,22 @@
+  p{
+    border: 1px solid black;
+    margin: 5px auto;
+    padding: 5px;
+  }
+
+  p2{
+
+    background-image: url("norgesflagg.png");
+    border: 1px solid black;
+    margin: 5px auto;
+    padding: 5px;
+      font-size: 30px;
+  }
+  
+  p3{
+    border: 1px solid black;
+    margin: 5px auto;
+    padding: 5px;
+    font-size: 30px;
+  }
+
