@@ -17,6 +17,7 @@ while (a_NATO > 0 && b_USSR > 0) {
     }
     console.log('A: ' + a_NATO + ' B:' + b_USSR);
 }
+
 if (a_NATO > 0) {
     console.log('NATO vant!');
 } else {
