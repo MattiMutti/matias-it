@@ -1,4 +1,4 @@
-let tall = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let tall = [0, 1, 2, 3, 4, 6, 7, 8, 9, 10]
 
 console.log(tall[2]); 
 console.log(tall[4]); 
