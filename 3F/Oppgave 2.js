@@ -15,18 +15,23 @@ let filmer = [
       regissør: "Ben Stiller",
       sett:(true) },
     { navn: "Fight club", 
-     regissør: "",
+     regissør: "David Fincher",
      sett:(false) },
     { navn: "Band of Brothers", 
-     regissør: "",
+     regissør: "Phil Alden Robinson",
      sett:(false) },
-    { navn: "", 
-     regissør: "",
+    { navn: "the pale blue eye", 
+     regissør: "Scott Cooper",
      sett:(false) },
-    { navn: "", 
-     regissør: "",
+    { navn: "The Menu", 
+     regissør: "Mark Mylod",
      sett:(false) },
-    { navn: "", 
-     regissør: "",
+    { navn: "Smile", 
+     regissør: "Parker Finn",
      sett:(false) },
   ];    
+
+for (let egenskap in filmer) {
+  console.log([filmer]);
+}
+  
