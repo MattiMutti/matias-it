@@ -10,3 +10,4 @@ let figur1 = {
 };
 
 console.log(figur1.fullfigur());
+
