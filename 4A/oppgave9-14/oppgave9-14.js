@@ -14,6 +14,9 @@ console.log(overskrift)
 console.log(avsnitt1)
 console.log(avsnitt2)
 
+/*
+La inn koden og fjerna "let liste" og køyrde i konsollen. Då kom feilmeldinga at tabell ikkje var definert
+*/
 
 let bodyEl = document.querySelector("body");
 
@@ -33,6 +36,10 @@ tabell += "</tbody>";
 tabell += "</table>";
 
 bodyEl.innerHTML += tabell;
+
+/*
+Oppgave 12, prøde å lage lista på slutten av bodyen men fekk det ikkje heilt til.
+*/
 
 let liste = document.querySelector("body")
 
