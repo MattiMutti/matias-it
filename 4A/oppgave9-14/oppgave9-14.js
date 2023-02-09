@@ -45,43 +45,26 @@ bodyEl.innerHTML += tabell;
 Oppgave 12, prøde å lage lista på slutten av bodyen men fekk det ikkje heilt til.
 */
 
-let liste = document.querySelector("body");
+let bodyEl = document.querySelector("body");
 
-let ordnetliste = "";
+let ordnetListe = "";
 
-liste += "<ol>";
-liste += "<li>";
-liste += "<li>";
+ordnetListe += "<ol>";
+ordnetListe += "<li> Fleinsopp </li>";
+ordnetListe += "<li> Fluesopp </li>";
+ordnetListe += "</ol>";
 
-ordnetliste.innerHTML += liste;
+bodyEl.innerHTML += ordnetListe;
 
 
 /*
 Oppgave 13 og 14
 */
 
-/*
-let liste = document.querySelector("body");
+let olEl = document.querySelector("ol");
 
-let tabell = "";
+olEl += "<li> skivesopp </li>";
 
-tabell += "<table>";
-tabell += "<thead>";
-tabell += "<tr>";
-tabell += "<th>Overskrift 1</th>";
-tabell += "<th>Overskrift 2</th>";
-tabell += "</tr>";
-tabell += "</thead>";
-tabell += "<tbody>";
-tabell += "<tr>";
-tabell += "<td>Innhold 1</td>";
-tabell += "<td>Innhold 2</td>";
-tabell += "</tr>";
-tabell += "</tbody>";
-tabell += "</table>";
+console.log(ordnetListe)
 
-liste.innerHTML += tabell;
-console.log(liste)
 
-document.getElementById("body").style.color = "red";
-*/
