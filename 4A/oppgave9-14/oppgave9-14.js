@@ -45,28 +45,16 @@ bodyEl.innerHTML += tabell;
 Oppgave 12, prøde å lage lista på slutten av bodyen men fekk det ikkje heilt til.
 */
 
-/*
 let liste = document.querySelector("body")
 
-let tabell = "";
+let ordnetliste = "";
 
-tabell += "<table>";
-tabell += "<thead>";
-tabell += "<tr>";
-tabell += "<th>Overskrift 1</th>";
-tabell += "<th>Overskrift 2</th>";
-tabell += "</tr>";
-tabell += "</thead>";
-tabell += "<tbody>";
-tabell += "<tr>";
-tabell += "<td>Innhold 1</td>";
-tabell += "<td>Innhold 2</td>";
-tabell += "</tr>";
-tabell += "</tbody>";
-tabell += "</table>";
+liste += "<ol>";
+liste += "<li>";
+liste += "<li>";
 
 liste.innerHTML += tabell;
-*/
+
 
 /*
 Oppgave 13 og 14
