@@ -45,7 +45,7 @@ bodyEl.innerHTML += tabell;
 Oppgave 12, prøde å lage lista på slutten av bodyen men fekk det ikkje heilt til.
 */
 
-let liste = document.querySelector("body")
+let liste = document.querySelector("bodyEL");
 
 let ordnetliste = "";
 
