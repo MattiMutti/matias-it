@@ -53,13 +53,14 @@ liste += "<ol>";
 liste += "<li>";
 liste += "<li>";
 
-liste.innerHTML += tabell;
+ordnetliste.innerHTML += liste;
 
 
 /*
 Oppgave 13 og 14
 */
 
+/*
 let liste = document.querySelector("body");
 
 let tabell = "";
@@ -83,3 +84,4 @@ liste.innerHTML += tabell;
 console.log(liste)
 
 document.getElementById("body").style.color = "red";
+*/
