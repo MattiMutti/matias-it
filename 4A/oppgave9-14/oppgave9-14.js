@@ -56,7 +56,6 @@ ordnetListe += "</ol>";
 
 bodyEl.innerHTML += ordnetListe;
 
-
 /*
 Oppgave 13 og 14
 */
@@ -67,4 +66,29 @@ olEl += "<li> skivesopp </li>";
 
 console.log(ordnetListe)
 
+/*
+oppgave 15 & 16
+*/
 
+/*
+let avsnittEl = document.querySelector(".blaa");
+avsnittEl.className = "blaa";
+*/
+
+/*
+oppgave 17
+*/
+/*
+avsnittEl.removeAttribute("blaa");
+*/
+
+/*
+oppgave 18
+*/
+let linkEl = document.querySelector("body")
+bodyEl.innerHTML += "<a id='lenkeNRK'>NRK</a>";
+bodyEl.innerHTML += "<a id='lenkeTV2'>TV2</a>";
+
+/*
+Oppgave 19
+*/
