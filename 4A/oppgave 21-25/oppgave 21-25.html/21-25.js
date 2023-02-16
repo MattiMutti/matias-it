@@ -9,7 +9,7 @@ let liste4El = document.createElement("ul");
 
 listeEl.id = "liste"
 
-listeEl.setAttribute("class", "red");
+liste.setAttribute("class", "red");
 
 
 bodyEl.appendChild(listeEl);
