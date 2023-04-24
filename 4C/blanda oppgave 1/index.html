@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bestill billetter til WizardHill</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-color: #FFD700;
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin: 0;
+		}
+		
+		h1 {
+			color: #FF4500;
+		}
+		
+		form {
+			margin-top: 50px;
+		}
+		
+		fieldset {
+			border: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		legend {
+			font-weight: bold;
+			font-size: 1.2em;
+			margin-bottom: 10px;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-size: 1.1em;
+		}
+		
+		select {
+			font-size: 1.1em;
+			padding: 5px;
+			margin-bottom: 15px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+		}
+		
+		input[type="checkbox"] {
+			margin-right: 10px;
+		}
+		
+		button {
+			background-color: #FF4500;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 1.1em;
+			cursor: pointer;
+		}    
+	</style>
+
+</head>
+<body>
+	<h1>Velkommen til WizardHill</h1>
+	<p>Den mest mystiske fornøyelsesparken for alle kunnskapssøkende magikere!</p>
+
+    <img src="/IMG/shadow wizard.jpg"  height="400px" weight="400px" alt="Wizard">
+	
+	<head>
+		<br>
+			<legend>Kjøp billetter</legend>
+			<label1 for="voksne">Antall voksne (295 kr per voksen):</label1>
+			<select id="voksne" name="voksne">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+			
+			<label for="barn">Antall barn (3-16 år) (149 kr per barn):</label>
+			<select id="barn" name="barn">
+                <option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+            </select>
+
+            <label for="baby">Antall barn (0-3 år) (gratis):</label>
+			<select id="baby" name="baby">
+                <option value="0">0 pers</option>
+				<option value="1">1 pers</option>
+				<option value="2">2 pers</option>
+				<option value="3">3 pers</option>
+				<option value="4">4 pers</option>
+            </select>
+
+            <label for="barnevogn">Med barnevogn? (ja eller nei):</label>
+			<select id="barn" name="barn">
+                <option value="ja">ja</option>
+				<option value="nei">nei</option>
+            </select>
+
+            <label for="badeland"> Tilgang til badeland, antall personer (139 kr per pers):</label>
+			<select id="badeland" name="badeland">
+                <option value="0">0 pers</option>
+				<option value="1">1 pers</option>
+				<option value="2">2 pers</option>
+				<option value="3">3 pers</option>
+				<option value="4">4 pers</option>
+            </select>
+
+            <label for="overraskelsepose"> overraskelseposer med godteri og leker(99 kr per pose):</label>
+			<select id="overraskelsepose" name="overraskelsepose">
+                <option value="0">0 poser</option>
+				<option value="1">1 poser</option>
+				<option value="2">2 poser</option>
+				<option value="3">3 poser</option>
+				<option value="4">4 poser</option>
+            </select>
+
+            <br></br>
+
+            <button>Få totalpris</button>
+
+            <p id="resultat"></p>
+
+            <script src="/4C/blanda oppgave/java.js"></script>
+
+        </head>
+        </body>
+        
