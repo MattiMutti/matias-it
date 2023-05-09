@@ -1,15 +1,15 @@
 function addTask() {
-    var task = document.getElementById("inputTask").value;
+    const task = document.querySelector("#inputTask").value;
     if (task === "") {
-      alert("Skriv inn en oppgave!");
+    alert("Skriv inn en oppgave!");
     } else {
-      var node = document.createElement("LI");
-      var textnode = document.createTextNode(task);
+      const node = document.createElement("LI");
+      const textnode = document.createTextNode(task);
       node.appendChild(textnode);
-      document.getElementById("taskList").appendChild(node);
+      document.querySelector("taskList").appendChild(node);
       node.onclick = function() {
         node.parentNode.removeChild(node);
       }
-      document.getElementById("inputTask").value = "";
+      document.querySelector("#inputTask").value = "";
     }
   }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaman Durek er søt</title>
+</head>
+<body>
+
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+    <script type="module">
+        const firebaseConfig = {
+          apiKey: "AIzaSyCTXmf0w2RO5U2C9FaQIELz8PTZbZ_5Ybk",
+          authDomain: "h-u-s-k-e-l-i-s-t-e.firebaseapp.com",
+          projectId: "h-u-s-k-e-l-i-s-t-e",
+          storageBucket: "h-u-s-k-e-l-i-s-t-e.appspot.com",
+          messagingSenderId: "521858391584",
+          appId: "1:521858391584:web:08ae09e6edca21a5c26645",
+          measurementId: "G-N9WQ0Y27R1"
+        };
+      
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+ // Lager en referanse til databasen
+let db = firebase.firestore();
+
+// Henter data. Når dataene er ferdig hentet, starter "then"-biten
+db.collection("huskeliste").get().then((snapshot) => {
+  // Henter ut dokumentene
+  let dokumenter = snapshot.docs;
+
+  // Skriver dokumentene til konsollen
+  console.log(dokumenter);
+});
+
+</script>
+
+<img src="/IMG/shaman durek.jpg">
+
+</body>
+</html>
