@@ -38,7 +38,40 @@ db.collection("huskeliste").get().then((snapshot) => {
 
 </script>
 
-<img src="/IMG/shaman durek.jpg">
+<div id="hoved">
+  <h1>Huskeliste</h1> 
+  <ul> </ul>
+</div>
+
+<script>
+  // Skriver dokumentene til konsollen
+  console.log(dokumenter);
+
+let ulEl = document.querySelector("ul");
+
+// Henter data. Når dataene er ferdig hentet, starter "then"-biten
+db.collection("huskeliste").get().then((snapshot) => {
+  // Henter ut dokumentene
+  let dokumenter = snapshot.docs;
+
+  // Går gjennom dokumentene og sender dem videre      
+  for (let i = 0; i < dokumenter.length; i++) {
+    visHuskeElement(dokumenter[i]);
+  }
+});
+
+// Funksjon som viser hvert element
+function visHuskeElement(dokument) {
+  // Lager et <li>-element
+  let liEl = document.createElement("li");
+  
+  // Legger til huskelisteteksten i <li>-elementet
+  liEl.innerHTML = dokument.data().husketekst;
+  
+  // Legger til <li>-elementet i <ul>-elementet
+  ulEl.appendChild(liEl);   
+}
+</script> 
 
 </body>
 </html>
